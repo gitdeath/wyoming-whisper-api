@@ -31,7 +31,7 @@ jobs:
 
     - name: Build the Docker image
       run: |
-        docker build . --file wyoming-whisper-api-client-Dockerfile \
+        docker build . --file Dockerfile \
           --tag ${{ steps.vars.outputs.image_id }}:${{ steps.vars.outputs.version }} \
           --tag ${{ steps.vars.outputs.image_id }}:latest
 
